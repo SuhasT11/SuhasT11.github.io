@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, #FFA69E, #B8F2E6); /* Light coral to light teal gradient */
+    background: #FFA69E; /* Light coral to light teal gradient */
     color: white;
     padding: 100px 0;
     text-align: center;
