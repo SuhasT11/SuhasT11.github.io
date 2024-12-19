@@ -4,149 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr MechNY - Your Trusted Car Service Partner</title>
-    <style>
-        /* Base styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        header {
-            background-color: #004080;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header img {
-            max-height: 50px;
-            vertical-align: middle;
-        }
-
-        header h1 {
-            display: inline;
-            margin-left: 10px;
-            font-size: 1.5rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 0.5rem;
-            background-color: #0066cc;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: space-around;
-        }
-
-        .feature {
-            background-color: #e6f0ff;
-            border: 1px solid #b3d1ff;
-            border-radius: 5px;
-            padding: 1.5rem;
-            width: calc(33% - 2rem);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature h3 {
-            color: #004080;
-        }
-
-        footer {
-            background-color: #004080;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .feature {
-                width: calc(50% - 2rem);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .feature {
-                width: 100%;
-            }
-
-            header h1 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Dr MechNY Logo">
-        <h1>Dr MechNY</h1>
+        <div class="container">
+            <img src="logo.png" alt="Dr MechNY Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Dr MechNY</h2>
-        <p>Your one-stop solution for all car service needs, Dr MechNY brings convenience and reliability to vehicle maintenance. From routine upkeep to emergency repairs, we connect you with top-rated service centers and expert technicians near you.</p>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Dr MechNY</h1>
+            <p>Your Trusted Car Service Partner</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
     </section>
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Effortless Service Booking</h3>
-                <p>Schedule services online with ease and choose from a variety of options.</p>
-            </div>
-            <div class="feature">
-                <h3>Upfront and Transparent Pricing</h3>
-                <p>Instant cost estimates with no hidden charges for complete transparency.</p>
-            </div>
-            <div class="feature">
-                <h3>Trusted Professionals</h3>
-                <p>Certified technicians using genuine spare parts to maintain your car’s performance.</p>
-            </div>
-            <div class="feature">
-                <h3>Doorstep Pick-Up & Drop</h3>
-                <p>Hassle-free pick-up and delivery with real-time updates.</p>
-            </div>
-            <div class="feature">
-                <h3>Service Records & Alerts</h3>
-                <p>Keep track of your car's history and receive timely reminders for due services.</p>
-            </div>
-            <div class="feature">
-                <h3>24/7 Emergency Assistance</h3>
-                <p>On-the-spot help for breakdowns, flat tires, jump-starts, and towing.</p>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Effortless Service Booking</h3>
+                    <p>Schedule services online with ease. Access a variety of services, including oil changes, brake inspections, tire replacements, and more.</p>
+                </div>
+                <div class="service">
+                    <h3>Upfront and Transparent Pricing</h3>
+                    <p>Instant cost estimates with no hidden charges. Detailed breakdowns ensure you know exactly what you're paying for.</p>
+                </div>
+                <div class="service">
+                    <h3>24/7 Emergency Assistance</h3>
+                    <p>On-the-spot help for breakdowns, flat tires, jump-starts, and towing. Rapid response time to get you back on the road.</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Dr MechNY. All rights reserved.</p>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Dr MechNY?</h2>
+            <ul>
+                <li>Convenient: Schedule services anytime, anywhere.</li>
+                <li>Reliable: Trusted technicians with a proven track record.</li>
+                <li>Transparent: No surprises, just honest service.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Dr MechNY. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
