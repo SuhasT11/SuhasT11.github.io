@@ -1,3 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #5E6472; /* Dark slate gray */
+    background-color: #FAF3DD; /* Light beige */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #AED9E0; /* Muted teal */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 60px; /* Adjusted for better size */
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #5E6472; /* Dark slate gray */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px); /* Lift effect */
+}
+
 .hero {
     background: linear-gradient(135deg, #FFA69E, #B8F2E6); /* Light coral to light teal gradient */
     color: white;
@@ -18,7 +81,6 @@
 .hero h1 small {
     font-size: 0.7em;
     font-weight: normal;
-    color: #5E6472; /* Dark slate gray for the 'NY' part */
 }
 
 .hero p {
@@ -43,4 +105,152 @@
     color: #5E6472;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-6px); /* Lift effect */
+}
+
+#services {
+    padding: 80px 0;
+    background-color: #ffffff; /* Solid white background for clear separation */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#services h2 {
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    color: #5E6472; /* Dark slate gray */
+    font-weight: 700;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: #FAF3DD; /* Light beige */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5E6472; /* Dark slate gray */
+    font-weight: 600;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #495057; /* Slightly lighter gray */
+}
+
+#why-choose-us {
+    background-color: #B8F2E6; /* Light teal */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#why-choose-us h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #5E6472; /* Dark slate gray */
+    font-weight: 700;
+}
+
+#why-choose-us ul {
+    list-style: none;
+}
+
+#why-choose-us li {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    color: #495057; /* Slightly lighter gray */
+}
+
+footer {
+    background-color: #5E6472; /* Dark slate gray */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+footer p {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 5px;
+    background-color: #FFA69E; /* Light coral */
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .cta-btn {
+        font-size: 1.1em;
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
 }
